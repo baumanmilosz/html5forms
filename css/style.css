@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: url(../assets/img/bg_filter.png), url(../assets/img/bg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    
+}
+/*Logo*/
+.logo_top {
+    text-align: center;
+    margin-bottom: 2.6rem;
+}
+
+.logo_bottom {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.logo_top img, .logo_bottom img {
+    opacity: 0.35;
+    max-width: 100%;
+/*    margin-bottom: 8rem;*/
+}
+/*/Logo*/
+/*Register Form*/
+.form_wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    margin-bottom: 4rem;
+}
+
+.form_wrapper h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.9rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.3rem #2b0100;
+}
+
+.form_wrapper .form_box {
+    border: 1.8rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.form_box .register {
+    background-color: #f4f4f4;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.register .inputs {
+    height: 4rem;
+    margin-top: 2rem;
+    border: 0.1rem solid #c6c6c6;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.register .inputs label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .inputs label span {
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1rem solid #e6e6e6;
+}
+
+.register .inputs input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding-left: 2rem;
+    color: #afafaf;
+}
+
+.register .inputs select {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding-left: 2rem;
+    color: #afafaf;
+    font-size: 1.6rem;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-appearance: none;
+}
+
+.register .inputs .arrow {
+    width: 2rem;
+    height: 1rem;
+    position: relative;
+    top: calc(50% - 0.5rem);
+    right: 1.5rem;
+}
+
+.register .inputs input::placeholder, .email .inputs textarea::placeholder {
+    color: #afafaf;
+    font-size: 1.6rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.register .checkbox {
+    margin: 1.2rem 0;
+    font-size: 1.7rem;
+    display: flex;
+}
+
+.register .checkbox input {
+    width: 2.3rem;
+    height: 2.3rem;
+    -webkit-appearance: none;
+    border-radius: 0.4rem;
+    position: relative;
+    border: 0.1rem solid #c6c6c6;
+    background-color: #f4f4f4;
+    margin-right: 1rem;
+    outline: none;
+}
+
+.checkbox input:checked:before {
+    content: '';
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: #93d02b;
+    border-radius: 0.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.register .checkbox label {
+    color: #afafaf;
+    text-shadow: none;
+}
+
+.register button {
+    height: 5rem;
+    background-image: linear-gradient(to bottom, #addc54, #7ec31f);
+    border: 0.1rem solid #3b9a00;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 2.4rem;
+    text-shadow: 0.2rem 0 0.2rem #4e7f0d;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+}
+/*/Register Form*/
+
+/*Send Email*/
+.email .textarea{
+    height: 23rem;
+}
+
+.email .textarea textarea {
+    width: 100%;
+    color: #afafaf;
+    font-size: 1.6rem;
+    font-family: 'Titillium Web', sans-serif;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+}
+/*/Send Email*/
+/*Sign In*/
+.form_box .signin {
+    padding: 1rem 2rem;
+}
+
+.inputs_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.inputs_wrapper button {
+    width: 14rem;
+    height: 4rem;
+    
+}
+/*/Sign In*/
+/*Recover Form*/
+ .inputs_wrapper .button_small {
+    width: 15rem;
+    font-size: 1.8rem;
+}
+
+.inputs_wrapper .disabled {
+    background-image: linear-gradient(to bottom, #cde4b0, #abd182);
+    border: 0.1rem solid #90ca6d;
+    cursor: not-allowed;
+}
+/*/Recover Form*/
+/*Subscribe Form*/
+.inputs_wrapper .button_no {
+    background-image: linear-gradient(to bottom, #f65e70, #f03848);
+    border: 0.1rem solid #a2202a;
+}
+/*/Subscribe Form*/
+
+/*Media Queries*/
+@media(min-width: 76.7rem) {
+    .wrapper {
+        margin-top: 5.5rem;
+    }
+    
+    .columns {
+        width: 100%;
+        height: 100%;
+        width: 92rem;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    
+    .column {
+        min-width: 42rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*/Media Queries*/
